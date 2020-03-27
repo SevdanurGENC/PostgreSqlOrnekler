@@ -43,14 +43,33 @@ where ad not in ('Ali')
 and ortalama > 2.0
 and soyad like '%z%'
 
+-- CRUD islemler (Create - Read - Update - Delete)
+-- DML (Data Manipulation Language)
 
+-- Veri Guncelleme  
+update ogrenci
+set ortalama = 2.35
+where ogrno = 4;
 
+update ogrenci
+set ortalama = 1.79, dogumtarihi = '1990-05-28' 
+where ogrno = 4;
 
+update ogrenci
+set ortalama = ortalama * 100;
 
+-- Veri Silme
+-- soru 
+delete from ogrenci
+where ogrno = 1;
 
+-- DDL (Veri Tanimlama Dili)
+-- Create, Alter, Drop
 
+-- Alter Kullanimi : 
+alter table ogrenci 
+add eposta varchar(150) not null
 
-
-
-
-
+-- Drop Kullanimi : 
+drop table ogrenci
+drop database ogrenci

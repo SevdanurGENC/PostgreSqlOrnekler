@@ -73,3 +73,17 @@ add eposta varchar(150) not null
 -- Drop Kullanimi : 
 drop table ogrenci
 drop database ogrenci
+
+-- Matematiksel Fonksiyonlar
+select 1+1 toplama_islemi;
+select 5-3 Cikarma_islemi, 5*15 carpma_islemi;
+select @ -10 mutlak_deger;
+select mod(12,5) mod_alma;
+select abs(-58.67) mutlak_deger;
+select div(30,8) bolme_islemi;
+select round(5.12345678,3) yuvarlama_islemi;
+
+select avg(ortalama) from ogrenci;
+select sum(ortalama) from ogrenci;
+select max(ortalama), min(ortalama) from ogrenci;
+select count(*) from ogrenci;
